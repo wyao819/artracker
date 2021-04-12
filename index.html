@@ -6,7 +6,14 @@
   <body style="margin : 0px; overflow : hidden;">
       <a-scene embedded arjs>
           <a-marker type="pattern" preset="custom" url="/artracker/pattern-artracker.patt">
-                    
+            
+            <a-entity
+                        position="0 0 0"
+                        scale="1 1 1"
+                        rotation="-90 0 0"
+                        obj-model="obj:url(/artracker/lotusLowest.obj)">
+            </a-entity>
+            
             <a-box
                    scale="1 1 0"
                    position="0 0 0"
