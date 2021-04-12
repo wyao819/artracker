@@ -7,7 +7,11 @@
       <a-scene embedded arjs>
           <a-marker type="pattern" preset="custom" url="/artracker/pattern-artracker.patt">
             
-            <a-entity
+              <a-box position="-3 -16 -3" rotation="0 45 0" height="2" width="2" depth="2" color="#C4BAFE"></a-box>
+              <a-sphere position="0 -16 0" radius="1.5" color="#82E3E3"></a-sphere>
+              <a-cylinder position="3 -16 3" radius="1.5" height="2.5" color="#DFN0B6"></a-cylinder>
+            
+             <a-entity
                         position="0 0 0"
                         scale="1 1 1"
                         rotation="-90 0 0"
@@ -19,7 +23,7 @@
                    position="0 0 0"
                    rotation="270 0 0"
                    crossorigin
-                   material="shader:gif; src:url(artracker/kitty.gif);" gif="">
+                   material="shader:gif; src:url(artracker/kitty.gif);" gif="" transparent="true" gif="">
               </abox>
             
           </a-marker>
