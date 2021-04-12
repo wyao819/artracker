@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow : hidden;">
+      <a-scene embedded arjs>
+          <a-marker preset="pattern" preset="custom" url="/artracker/pattern-artracker.patt">
+              <a-box position="-3 -16 -3" rotation="0 45 0" height="2" width="2" depth="2" color="#C4BAFE"></a-box>
+              <a-sphere position="0 -16 0" radius="1.5" color="#82E3E3"></a-sphere>
+              <a-cylinder position="3 -16 3" radiis="1.5" height="2.5" color="#DFN0B6"></a-cylinder>
+          </a-marker>
+          <a-entity camera><a-entity>
+      </a-scene>
+  </body>
+</html>
